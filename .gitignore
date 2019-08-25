@@ -1,0 +1,10 @@
+*.suo
+*.vcxproj.user
+*.sdf
+*.opensdf
+ipch/
+.vs/
+[Dd]ebug/
+[Rr]elease/
+BulletFramework/[Dd]ebug/
+BulletFramework/[Rr]elease/
