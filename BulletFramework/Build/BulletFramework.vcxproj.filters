@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Framework">
+      <UniqueIdentifier>{c267c6c1-aad1-4867-9867-7d5da010dc3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Framework\OpenGLWindow">
+      <UniqueIdentifier>{678cf0e8-0f9a-4441-8335-4944fe23e457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework">
+      <UniqueIdentifier>{efa165ed-4b15-44f7-9e3a-d1709b99805d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\OpenGLWindow">
+      <UniqueIdentifier>{5e993d7d-eafb-4b02-b104-57c3fb0a9c76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\CommonInterfaces">
+      <UniqueIdentifier>{3517f50e-b76b-4b6c-b015-2bf2a96d3780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\OpenGLWindow\ThirdParty">
+      <UniqueIdentifier>{7d2626d1-0fbf-41a8-9871-f9306b1ed0b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\OpenGLWindow\ThirdParty\glad">
+      <UniqueIdentifier>{a0e4e170-c85d-405c-ac8f-b7af0728f716}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BulletFramework.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\OpenGLWindow\OpenGLWindow.cpp">
+      <Filter>ソース ファイル\Framework\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\OpenGLWindow\Win32Window.cpp">
+      <Filter>ソース ファイル\Framework\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\glad\source\gl.cpp">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow\ThirdParty\glad</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\OpenGLWindow.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\Win32Window.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\CommonInterfaces\CommonCallbacks.h">
+      <Filter>ヘッダー ファイル\Framework\CommonInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\CommonInterfaces\CommonWindowInterface.h">
+      <Filter>ヘッダー ファイル\Framework\CommonInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\OpenGLInclude.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\Win32InternalWindowData.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

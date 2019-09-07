@@ -10,5 +10,6 @@
 #define PCH_H
 
 // TODO: ここでプリコンパイルするヘッダーを追加します
+#include "Framework/CommonInterfaces/CommonWindowInterface.h"
 
 #endif //PCH_H
