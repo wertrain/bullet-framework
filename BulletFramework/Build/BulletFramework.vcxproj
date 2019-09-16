@@ -20,21 +20,48 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\BulletFramework.cpp" />
+    <ClCompile Include="Source\Framework\Foundation\AlignedAllocator.cpp" />
+    <ClCompile Include="Source\Framework\OpenGLWindow\GLInstancingRenderer.cpp" />
+    <ClCompile Include="Source\Framework\OpenGLWindow\GLRenderToTexture.cpp" />
+    <ClCompile Include="Source\Framework\OpenGLWindow\LoadShader.cpp" />
     <ClCompile Include="Source\Framework\OpenGLWindow\OpenGLWindow.cpp" />
+    <ClCompile Include="Source\Framework\OpenGLWindow\SimpleCamera.cpp" />
     <ClCompile Include="Source\Framework\OpenGLWindow\Win32Window.cpp" />
+    <ClCompile Include="Source\Framework\Utility\Clock.cpp" />
+    <ClCompile Include="Source\Framework\Utility\Logging.cpp" />
     <ClCompile Include="Source\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="ThirdParty\glad\source\gl.cpp" />
+    <ClCompile Include="ThirdParty\stb_image\stb_image_write.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Framework\CommonInterfaces\CommonCallbacks.h" />
+    <ClInclude Include="Include\Framework\CommonInterfaces\CommonCameraInterface.h" />
+    <ClInclude Include="Include\Framework\CommonInterfaces\CommonRenderInterface.h" />
     <ClInclude Include="Include\Framework\CommonInterfaces\CommonWindowInterface.h" />
+    <ClInclude Include="Include\Framework\Foundation\AlignedAllocator.h" />
+    <ClInclude Include="Include\Framework\Foundation\AlignedObjectArray.h" />
+    <ClInclude Include="Include\Framework\Foundation\Matrix3x3.h" />
+    <ClInclude Include="Include\Framework\Foundation\MinMax.h" />
+    <ClInclude Include="Include\Framework\Foundation\QuadWord.h" />
+    <ClInclude Include="Include\Framework\Foundation\Quaternion.h" />
+    <ClInclude Include="Include\Framework\Foundation\ResizablePool.h" />
+    <ClInclude Include="Include\Framework\Foundation\Scalar.h" />
+    <ClInclude Include="Include\Framework\Foundation\Transform.h" />
+    <ClInclude Include="Include\Framework\Foundation\Vector3.h" />
+    <ClInclude Include="Include\Framework\OpenGLWindow\GLInstanceRendererInternalData.h" />
+    <ClInclude Include="Include\Framework\OpenGLWindow\GLInstancingRenderer.h" />
+    <ClInclude Include="Include\Framework\OpenGLWindow\GLRenderToTexture.h" />
+    <ClInclude Include="Include\Framework\OpenGLWindow\LoadShader.h" />
     <ClInclude Include="Include\Framework\OpenGLWindow\OpenGLInclude.h" />
     <ClInclude Include="Include\Framework\OpenGLWindow\OpenGLWindow.h" />
+    <ClInclude Include="Include\Framework\OpenGLWindow\SimpleCamera.h" />
     <ClInclude Include="Include\Framework\OpenGLWindow\Win32InternalWindowData.h" />
     <ClInclude Include="Include\Framework\OpenGLWindow\Win32Window.h" />
+    <ClInclude Include="Include\Framework\Utility\Clock.h" />
+    <ClInclude Include="Include\Framework\Utility\Logging.h" />
     <ClInclude Include="Include\pch.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -125,7 +152,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\glad\include\;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\stb_image\;$(ProjectDir)\ThirdParty\glad\include\;$(ProjectDir)Include\Framework\OpenGLWindow\Shaders;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -163,7 +190,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\glad\include\;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\stb_image\;$(ProjectDir)\ThirdParty\glad\include\;$(ProjectDir)Include\Framework\OpenGLWindow\Shaders;$(ProjectDir)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

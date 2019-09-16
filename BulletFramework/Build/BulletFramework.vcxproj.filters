@@ -1,23 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="リソース ファイル">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\Framework">
-      <UniqueIdentifier>{c267c6c1-aad1-4867-9867-7d5da010dc3f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Framework\OpenGLWindow">
-      <UniqueIdentifier>{678cf0e8-0f9a-4441-8335-4944fe23e457}</UniqueIdentifier>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="ヘッダー ファイル\Framework">
       <UniqueIdentifier>{efa165ed-4b15-44f7-9e3a-d1709b99805d}</UniqueIdentifier>
@@ -25,14 +15,39 @@
     <Filter Include="ヘッダー ファイル\Framework\OpenGLWindow">
       <UniqueIdentifier>{5e993d7d-eafb-4b02-b104-57c3fb0a9c76}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Framework\CommonInterfaces">
-      <UniqueIdentifier>{3517f50e-b76b-4b6c-b015-2bf2a96d3780}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ヘッダー ファイル\Framework\OpenGLWindow\ThirdParty">
       <UniqueIdentifier>{7d2626d1-0fbf-41a8-9871-f9306b1ed0b8}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダー ファイル\Framework\OpenGLWindow\ThirdParty\glad">
       <UniqueIdentifier>{a0e4e170-c85d-405c-ac8f-b7af0728f716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\CommonInterfaces">
+      <UniqueIdentifier>{3517f50e-b76b-4b6c-b015-2bf2a96d3780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\Utility">
+      <UniqueIdentifier>{dc5f8fad-d4f9-4033-bd4e-8c6cf30fbfc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\Foundation">
+      <UniqueIdentifier>{6be07bb4-8fcd-4107-91f4-7cdee247dfe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Framework">
+      <UniqueIdentifier>{c267c6c1-aad1-4867-9867-7d5da010dc3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Framework\OpenGLWindow">
+      <UniqueIdentifier>{678cf0e8-0f9a-4441-8335-4944fe23e457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Framework\Utility">
+      <UniqueIdentifier>{2c81102a-4284-491e-b5d8-44c99f693a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Framework\Foundation">
+      <UniqueIdentifier>{cc66b9b7-87af-4910-a2b8-8b69d369a9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Framework\OpenGLWindow\stb_image">
+      <UniqueIdentifier>{0f15ba69-17c4-40f5-9a42-7705b716cc1c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +65,30 @@
     </ClCompile>
     <ClCompile Include="ThirdParty\glad\source\gl.cpp">
       <Filter>ヘッダー ファイル\Framework\OpenGLWindow\ThirdParty\glad</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\Utility\Clock.cpp">
+      <Filter>ソース ファイル\Framework\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\OpenGLWindow\GLInstancingRenderer.cpp">
+      <Filter>ソース ファイル\Framework\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\Foundation\AlignedAllocator.cpp">
+      <Filter>ソース ファイル\Framework\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\OpenGLWindow\LoadShader.cpp">
+      <Filter>ソース ファイル\Framework\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\Utility\Logging.cpp">
+      <Filter>ソース ファイル\Framework\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\OpenGLWindow\GLRenderToTexture.cpp">
+      <Filter>ソース ファイル\Framework\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\stb_image\stb_image_write.cpp">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow\stb_image</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\OpenGLWindow\SimpleCamera.cpp">
+      <Filter>ソース ファイル\Framework\OpenGLWindow</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +112,63 @@
     </ClInclude>
     <ClInclude Include="Include\Framework\OpenGLWindow\Win32InternalWindowData.h">
       <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Utility\Clock.h">
+      <Filter>ヘッダー ファイル\Framework\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\CommonInterfaces\CommonRenderInterface.h">
+      <Filter>ヘッダー ファイル\Framework\CommonInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\GLInstanceRendererInternalData.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\GLInstancingRenderer.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\AlignedAllocator.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\AlignedObjectArray.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\Scalar.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\Matrix3x3.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\Quaternion.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\ResizablePool.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\Transform.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\Vector3.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\MinMax.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\LoadShader.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Utility\Logging.h">
+      <Filter>ヘッダー ファイル\Framework\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\Foundation\QuadWord.h">
+      <Filter>ヘッダー ファイル\Framework\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\GLRenderToTexture.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\OpenGLWindow\SimpleCamera.h">
+      <Filter>ヘッダー ファイル\Framework\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Framework\CommonInterfaces\CommonCameraInterface.h">
+      <Filter>ヘッダー ファイル\Framework\CommonInterfaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
